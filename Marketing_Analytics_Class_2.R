@@ -20,46 +20,46 @@
 ##### Creating Objects in R #####
 #################################
 
-##### Creating values
+## Creating values
 
-#Numeric object that is a value
+# Numeric object that is a value
 value1 <- 4
 
-##### Creating lists
+## Creating lists
 
-#An object that is a list of characters
+# An object that is a list of characters
 list1 <- c("Red","green","blue")
 # NOTE: c() stands for "combine"
 
-##### Creating vectors
+## Creating vectors
 
-#Numerical Vector
+# Numerical Vector
 vector1 <- c(1,2,3,4,5,6)
 
-#Logical vector
+# Logical vector
 vector2 <- c(TRUE, FALSE, FALSE, TRUE)
 
 Vector2  
 # NOTE: that objects are caps sensitive. So calling this object won't work
 
-##### Creating matrices
+# Creating matrices
 
-#2x2 matrix
+# 2x2 matrix
 cell <-c(1,26,24,68)
 rnames <- c("r1","r2")
 cnames <- c("c1", "c2")
 Ken_Matrix <-matrix(cell, nrow=2, ncol = 2, byrow=FALSE)
 
-##### Creating Dataframes
+# Creating Dataframes
 
-#DF with three variables
+# DF with three variables
 d <- c(1,2,3)
 e <- c("red","white","blue")
 f <- c(TRUE, FALSE, TRUE)
 
 df <- data.frame(d,e,f)
 
-#Naming Function
+# Naming Function
 
 names(df) <- c("ID","Color","Passed")
 
@@ -75,10 +75,10 @@ df[,1]
 # NOTE: When rows is left blank, R uses all rows
 df[,1:2]
 
-#Pretend that df has 50 million columns, you can create a subset dataframe
+# Pretend that df has 50 million columns, you can create a subset dataframe
 df2 <- df[,1:2]
 
-#Using index values to select non-sequential variables
+# Using index values to select non-sequential variables
 df3 <- df[,c(1,3)]
 
 #####################################
@@ -86,7 +86,7 @@ df3 <- df[,c(1,3)]
 #####################################
 
 df$ID
-#NOTE: use "$" to select variable from a dataframe
+# NOTE: use "$" to select variable from a dataframe
 
 df4 <- data.frame(df$ID, df$Color)
 
@@ -102,20 +102,20 @@ na.omit() #remove any/all missing values
 ##### get and set a working directory in R #####
 ################################################
 
-#####Find you working directory
+# Find you working directory
 getwd()
 
-#####Set your working directory
+# Set your working directory
 setwd("/Users/Ken/Desktop")
 
 ####################################
 ##### Install and Use Packages #####
 ####################################
 
-##### To install packages
+# To install packages
 install.packages("readxl")
 
-##### To call libraries
+# To call libraries
 library(readxl)
 
 ##########################
@@ -128,22 +128,24 @@ data2 <- read_excel("data.xlsx")
 ##### Basic Operations #####
 ############################
 
-#####Core functions
+## Core functions
 
-#divide
+# divide
 data$pep_imp1 <- data$`Importance of pepperoni quality`/2
-#multiply
+
+# multiply
 data$pep_imp2 <- data$`Importance of pepperoni quality`*2
-#exponential
+
+# exponential
 data$pep_imp3 <- data$`Importance of pepperoni quality`**2
 
-#####Other functions
+## Other functions
 
-#Greater than
+# greater than
 >
-#greater than or equal to
+# greater than or equal to
 >=
-#equal
+# equal
 ==
-#not equal
+# not equal
 !=
