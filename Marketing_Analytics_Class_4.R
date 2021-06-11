@@ -1,6 +1,6 @@
 # Class: 4
 
-# Date: 2/11/2021
+# Date Of Last Update: 6/10/2021
 
 # Author: Ken Faro, Ph.D.
 
@@ -9,8 +9,7 @@
 # License: Faro and Inkblot Educational License For One Semester Use
 
 # Disclosure: These materials are subject to the terms of the "Notice of Faro and 
-#             Inkblot Educational License For One Semester Use", given to all students
-#             on 2/18 and posted online with all course materials on 2/18. 
+#             Inkblot Educational License For One Semester Use", posted in this repository. 
 
 
 ####################################################
@@ -136,13 +135,26 @@ anova(model,model2)
 
 summary(model2)
 
-##### How To INterpret R-Squared
+##### How To Interpret R-Squared
 # 6% of the variace in credit score is explained by age
 
+######################
+##### t-Test #####
+######################
 
+t.test(data2$money ~ data2$loyalty2)
 
+######################
+##### ANOVA #####
+######################
 
+library("ggpubr")
 
+ggboxplot(data2, x = "income", y = "openness", 
+          color = "income")
 
+summary(aov(data2$openness ~ data2$income))
+
+TukeyHSD(aov(data2$openness ~ data2$income))
 
 
