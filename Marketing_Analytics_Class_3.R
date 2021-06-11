@@ -1,6 +1,6 @@
 # Class: 3
 
-# Date: 2/9/2021
+# Date of Last Update: 6/8/2021
 
 # Author: Ken Faro, Ph.D.
 
@@ -9,8 +9,7 @@
 # License: Faro and Inkblot Educational License For One Semester Use
 
 # Disclosure: These materials are subject to the terms of the "Notice of Faro and 
-#             Inkblot Educational License For One Semester Use", given to all students
-#             on 2/18 and posted online with all course materials on 2/18. 
+#             Inkblot Educational License For One Semester Use", posted in this repository. 
 
 
 ############################################################
