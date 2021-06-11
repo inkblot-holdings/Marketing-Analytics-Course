@@ -17,29 +17,6 @@
 ########## Learning Basic Data Visualization in R ########## 
 ############################################################
 
-###################################################
-##### Data Viz Example - Perception Over Time #####
-###################################################
-
-library(FactoMineR)
-
-data <- X2017
-
-data1 <- data[1:6,2:9]
-
-str(data1)
-
-data2 <- as.data.frame(data1)
-
-str(data2)
-
-X <- data.frame(data[1:6,1])
-
-rownames(data2) <- X
-  
-map <- CA(data2)
-
-
 #######################################
 ##### Learning The GGPLOT Package #####
 #######################################
