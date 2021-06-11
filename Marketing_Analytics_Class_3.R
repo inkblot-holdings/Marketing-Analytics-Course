@@ -24,20 +24,20 @@ install.packages("ggplot2")
 
 library("ggplot2")
 
-#####GGPLOT uses Package Arguments + Aesthetic + Geometric Object 
+## GGPLOT uses Package Arguments + Aesthetic + Geometric Object 
 
-##### Package Arguments
+# Package Arguments
 
 graph <- ggplot(df)
 
-##### Package Arguments + Aesthetic 
+# Package Arguments + Aesthetic 
 
 graph <- ggplot(df, aes(x, y))
 
-#####  Package Arguments + Aesthetic + Geometric Object 
+#  Package Arguments + Aesthetic + Geometric Object 
 graph <- ggplot(df, aes(x-variable)) + geom_bar()
 
-#Other example geometric objects
+## Other example geometric objects
 
 # Geom_bar()
 # Geom_point()
