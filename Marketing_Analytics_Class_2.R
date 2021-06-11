@@ -1,6 +1,6 @@
 # Class: 2
 
-# Date: 2/4/2021
+# Date Of Last Update: 6/3/2021
 
 # Author: Ken Faro, Ph.D.
 
@@ -9,8 +9,7 @@
 # License: Faro and Inkblot Educational License For One Semester Use
 
 # Disclosure: These materials are subject to the terms of the "Notice of Faro and 
-#             Inkblot Educational License For One Semester Use", given to all students
-#             on 2/18 and posted online with all course materials on 2/18. 
+#             Inkblot Educational License For One Semester Use", posted in this repository. 
 
 
 ###########################################
@@ -123,7 +122,7 @@ library(readxl)
 ##### Importing Data #####
 ##########################
 
-data2 <- read_excel("mock_pizza_data.xlsx")
+data2 <- read_excel("data.xlsx")
 
 ############################
 ##### Basic Operations #####
