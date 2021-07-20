@@ -17,3 +17,14 @@
 ###########################################
 
 # BACKGROUND:
+# Imagine you're working with a big chip brand. Imagine they provide you with the "Chips Map.xlsx"
+# dataset. Your task is to help them understand the brand perceptions in the market place
+
+# WARNING: this is a complicated data set. Your task is to turn this dataset into
+#the input required to generate a perceptual map.
+
+# QUESTION 1: Wrangle the data so that it looks like the input required for a perceptual map
+
+# QUESTION 2: Generate the perceptual map and describe the category perceptions. What is the map telling you?
+
+# QUESTION 3: If Utz was your client, what would you suggest their strategy should be?
